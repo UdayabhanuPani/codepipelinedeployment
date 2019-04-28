@@ -2,7 +2,7 @@ version: 0.1
 phase:
   install:
     commands:
-      - aws cloudformation package --template-file SAM_template.yml --s3-bucket lambda-pipeline --output-template-file outputSamTemplate.yml
+      - aws cloudformation package --template-file SAM_template.yml --s3-bucket mybucket19042019 --output-template-file outputSamTemplate.yml
 artifacts:
   type: zip
   files:
